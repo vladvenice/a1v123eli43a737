@@ -141,17 +141,7 @@ async def main() -> None:
     scheduler.start()
     log.info("🤖 Бот запущен! Ожидание расписания...")
 
-    # ТЕСТ — отправит сообщение через 1 минуту после запуска
-    from datetime import timedelta
-    scheduler.add_job(
-        send_warming,
-        trigger="date",
-        run_date=datetime.now(tz_moscow) + timedelta(minutes=1),
-        args=[bot],
-        id="test_message",
-    )
-    log.info("Тестовое сообщение придёт через 1 минуту")
-
+    # Держим event loop живым
     try:
         while True:
             await asyncio.sleep(60)
