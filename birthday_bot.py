@@ -19,8 +19,8 @@ from telegram import Bot
 
 # ─── НАСТРОЙКИ ────────────────────────────────────────────────────────────────
 
-BOT_TOKEN  = os.environ["8226116357:AAHyZ-uYqjyI93MqDOoQldbh1EkRiAp-JZs"]        # задаётся в Railway → Variables
-CHAT_ID    = int(os.environ["1358204047"])     # задаётся в Railway → Variables
+BOT_TOKEN  = os.environ[""]        # задаётся в Railway → Variables
+CHAT_ID    = int(os.environ[""])     # задаётся в Railway → Variables
 FINAL_LINK = "https://aveiliabirthday.netlify.app/"  # ← замени на свою ссылку
 
 # ─── СООБЩЕНИЯ-ПРОГРЕВЫ ───────────────────────────────────────────────────────
